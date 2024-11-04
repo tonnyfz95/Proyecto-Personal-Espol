@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tailwind Starter Template - Ghostwind CSS : Tailwind Toolbox</title>
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/> <!--Replace with your tailwind.css once created-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+<style>:root{
+::-webkit-scrollbar{height:10px;width:10px}::-webkit-scrollbar-track{background:#efefef;border-radius:6px}::-webkit-scrollbar-thumb{background:#d5d5d5;border-radius:6px}::-webkit-scrollbar-thumb:hover{background:#c4c4c4}</style>
+</head>
+<body class="bg-gray-200 font-sans leading-normal tracking-normal">
+
+	<!--Header-->
+	<div class="w-full m-0 p-0 bg-cover bg-bottom" style="background-image:url('cover.jpg'); height: 60vh; max-height:460px;">
+			<div class="container max-w-4xl mx-auto pt-16 md:pt-32 text-center break-normal">
+				<!--Title-->
+					<p class="text-white font-extrabold text-3xl md:text-5xl">
+						😁 Blog Universitario UTEQ
+					</p>
+					<p class="text-xl md:text-2xl text-gray-500">Bienvenido a nuestro blog</p>
+			</div>
+		</div>
+		
+		<!--Container-->
+		<div class="container px-4 md:px-0 max-w-6xl mx-auto -mt-32">
+			
+			<div class="mx-0 sm:mx-6">
+				
+				<!--Nav-->
+				<nav class="mt-0 w-full">
+					<div class="container mx-auto flex items-center">
+						
+						<div class="flex w-1/2 pl-4 text-sm">
+							<ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
+								<li class="mr-2">
+								<a class="inline-block py-2 px-2 text-white no-underline hover:underline" href="post.html">POST</a>
+								</li>
+								<li class="mr-2">
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="multimenu post.html">MULTIMENU POST</a>
+								</li>
+								<li class="mr-2">
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="#">LINK</a>
+								</li>
+								<li class="mr-2">
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="post_vue.html">POST_VUE</a>
+								</li>
+							</ul>
+						</div>
+
+
+						<div class="flex w-1/2 justify-end content-center">		
+							<a class="inline-block text-gray-300 no-underline hover:text-white hover:text-underline text-center h-10 p-2 md:h-auto md:p-2 avatar"
+								data-tippy-content="@instagram_handle" href="https://www.instagram.com/uteq.ec/?hl=es" target="_blank"
+								rel="noopener noreferrer">
+								<svg class="fill-current h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+									<path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.056 1.97.24 2.428.41a4.92 4.92 0 0 1 1.775 1.158 4.92 4.92 0 0 1 1.158 1.774c.17.459.354 1.259.41 2.429.058 1.265.07 1.645.07 4.849s-.012 3.584-.07 4.85c-.056 1.17-.24 1.97-.41 2.428a4.902 4.902 0 0 1-1.158 1.775 4.903 4.903 0 0 1-1.774 1.158c-.459.17-1.259.354-2.429.41-1.265.058-1.645.07-4.849.07s-3.584-.012-4.85-.07c-1.17-.056-1.97-.24-2.428-.41a4.918 4.918 0 0 1-1.775-1.158 4.918 4.918 0 0 1-1.158-1.774c-.17-.459-.354-1.259-.41-2.429-.058-1.265-.07-1.645-.07-4.849s.012-3.584.07-4.85c.056-1.17.24-1.97.41-2.428a4.92 4.92 0 0 1 1.158-1.775 4.92 4.92 0 0 1 1.774-1.158c.459-.17 1.259-.354 2.429-.41C8.416 2.175 8.796 2.163 12 2.163zm0 1.837c-3.179 0-3.564.011-4.821.069-1.07.05-1.662.23-2.048.384a3.09 3.09 0 0 0-1.27.825 3.09 3.09 0 0 0-.825 1.269c-.155.386-.334.978-.384 2.048-.058 1.257-.069 1.642-.069 4.821s.011 3.564.069 4.821c.05 1.07.23 1.662.384 2.048a3.09 3.09 0 0 0 .825 1.27 3.09 3.09 0 0 0 1.269.825c.386.155.978.334 2.048.384 1.257.058 1.642.069 4.821.069s3.564-.011 4.821-.069c1.07-.05 1.662-.23 2.048-.384a3.09 3.09 0 0 0 1.269-.825 3.09 3.09 0 0 0 .825-1.269c.155-.386.334-.978.384-2.048.058-1.257.069-1.642.069-4.821s-.011-3.564-.069-4.821c-.05-1.07-.23-1.662-.384-2.048a3.09 3.09 0 0 0-.825-1.269 3.09 3.09 0 0 0-1.269-.825c-.386-.155-.978-.334-2.048-.384-1.257-.058-1.642-.069-4.821-.069zm0 5.838a5.834 5.834 0 1 0 0 11.668 5.834 5.834 0 0 0 0-11.668zm0 9.662a3.828 3.828 0 1 1 0-7.656 3.828 3.828 0 0 1 0 7.656zm6.406-10.845a1.4 1.4 0 1 1 0-2.799 1.4 1.4 0 0 1 0 2.799z" />
+								</svg>
+							</a>
+							<a class="inline-block text-gray-300 no-underline hover:text-white hover:text-underline text-center h-10 p-1 md:h-auto md:p-2 avatar"
+								data-tippy-content="@x_handle" href="https://x.com/i/flow/login?redirect_after_login=%2Futequevedo" target="_blank" rel="noopener noreferrer">
+								<svg class="fill-current h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+									<path d="M22.46 5.95c-.79.35-1.62.58-2.48.68a4.27 4.27 0 0 0 1.87-2.37 8.53 8.53 0 0 1-2.7 1.03 4.23 4.23 0 0 0-7.2 3.86 12.02 12.02 0 0 1-8.74-4.43 4.23 4.23 0 0 0 1.31 5.64 4.22 4.22 0 0 1-1.92-.53v.05a4.23 4.23 0 0 0 3.4 4.14 4.24 4.24 0 0 1-1.91.07 4.23 4.23 0 0 0 3.95 2.93A8.5 8.5 0 0 1 2 18.41a12 12 0 0 0 6.5 1.9c7.8 0 12.06-6.47 12.06-12.07 0-.18 0-.36-.01-.54a8.65 8.65 0 0 0 2.12-2.2z"/>
+								</svg>
+							</a>
+
+							<a class="inline-block text-gray-300 no-underline hover:text-white hover:text-underline text-center h-10 p-2 md:h-auto md:p-2 avatar"
+								data-tippy-content="#facebook_id" href="https://www.facebook.com/uteq.ecuador" target="_blank">
+								<svg class="fill-current h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+									<path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path>
+								</svg>
+							</a>
+						</div>
+
+					</div>
+				</nav>
+
+				<div class="bg-gray-200 w-full text-xl md:text-2xl text-gray-800 leading-normal rounded-t">
+					
+				<!--Lead Card-->
+				<div class="flex h-full bg-white rounded overflow-hidden shadow-lg">
+					<a href="post.html" class="flex flex-wrap no-underline hover:no-underline">
+						<div class="w-full md:w-2/3 rounded-t">	
+							<img src="imagenes/inicio_clase1.jpg" class="h-full w-full shadow">
+						</div>
+
+						<div class="w-full md:w-1/3 flex flex-col flex-grow flex-shrink">
+							<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+								<p class="w-full text-gray-600 text-xs md:text-sm pt-6 px-6">Segundo Periodo Académico 2024-2025</p>
+								<div class="w-full font-bold text-xl text-gray-900 px-3">👋 Noticias sobre el inicio de clases</div>
+								<p class="text-gray-800 font-serif text-base px-6 mb-5">
+									La Universidad Técnica Estatal de Quevedo (UTEQ) se complace en dar la bienvenida a todos sus estudiantes, 
+									tanto a los nuevos como a aquellos que continúan su camino en grados superiores. Nos emociona anunciar 
+									que las clases iniciarán el 18 de noviembre de 2024, y nos preparamos para un año académico lleno de 
+									aprendizaje, crecimiento y oportunidades. A los nuevos estudiantes, les extendemos nuestros mejores deseos
+									 en este emocionante inicio de su carrera profesional. A los estudiantes de grados avanzados, 
+									 los alentamos a seguir esforzándose y a inspirar a otros con su dedicación.
+									  ¡Bienvenidos a un nuevo ciclo en la UTEQ!
+								</p>
+							</div>
+
+							<div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
+								<div class="flex items-center justify-between">
+									<img class="w-8 h-8 rounded-full mr-4 avatar" data-tippy-content="Tonny Figueroa Zerna" src="imagenes/foto_usuario_principal.jpg" alt="Avatar of Author">
+									<p class="text-gray-600 text-xs md:text-sm">2 H. Aprox.</p>
+								</div>
+							</div>
+						</div>
+
+					</a>
+				</div>
+				<!--/Lead Card-->
+
+
+				<!--Posts Container-->
+				<div class="flex flex-wrap justify-between pt-12 -mx-6">
+
+					<!--1/3 col -->
+					<div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+						<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+							<a href="#" class="flex flex-wrap no-underline hover:no-underline">
+								<img src="imagenes/deportivo1.jpg" class="h-64 w-full rounded-t pb-6">
+								<p class="w-full text-gray-600 text-xs md:text-sm px-6">JORNADA DEPORTIVA</p>
+								<div class="w-full font-bold text-xl text-gray-900 px-6">Apertura Deportiva UTEQ</div>
+								<p class="text-gray-800 font-serif text-base px-6 mb-5">
+									El evento se llevo a cabo dentro de las instalaciones de la Universidad Tecina Estatal de Quevedo, dando como resultado una exitosa apertura a las jornada deportivas entre socios de la AET.
+								</p>
+							</a>
+						</div>
+						<div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
+							<div class="flex items-center justify-between">
+								<img class="w-8 h-8 rounded-full mr-4 avatar" data-tippy-content="Tonny Figueroa Zerna" src="imagenes/foto_usuario_principal.jpg" alt="Avatar of Author">
+								<p class="text-gray-600 text-xs md:text-sm">1 Min. Aprox.</p>
+							</div>
+						</div>
+					</div>
+				
+					
+					<!--1/3 col -->
+					<div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+						<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+							<a href="#" class="flex flex-wrap no-underline hover:no-underline">
+								<img src="imagenes/ganadores1.jpg" class="h-64 w-full rounded-t pb-6">
+								<p class="w-full text-gray-600 text-xs md:text-sm px-6">GANADORES PADRINO Y MADRINA</p>
+								<div class="w-full font-bold text-xl text-gray-900 px-6">Representantes Deportivos</div>
+								<p class="text-gray-800 font-serif text-base px-6 mb-5">
+									Dentro del evento que se realizo se pudo apreciar la elecciones de los representantes de cada equipo, para poder elegir al Padrino como a la Madrina, y mediante una competencia muy luchada tenemos anuestros representantes 🤩 🥳
+								</p>
+							</a>
+							</div>
+						<div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
+							<div class="flex items-center justify-between">
+								<img class="w-8 h-8 rounded-full mr-4 avatar" data-tippy-content="Author Name" src="http://i.pravatar.cc/300" alt="Avatar of Author">
+								<p class="text-gray-600 text-xs md:text-sm">1 MIN READ</p>
+							</div>
+						</div>
+					</div>
+
+					<!--1/3 col -->
+					<div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+						<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+							<a href="#" class="flex flex-wrap no-underline hover:no-underline">
+								<img src="https://source.unsplash.com/collection/539527/800x600" class="h-64 w-full rounded-t pb-6">
+								<p class="w-full text-gray-600 text-xs md:text-sm px-6">GETTING STARTED</p>
+								<div class="w-full  font-bold text-xl text-gray-900 px-6">Lorem ipsum dolor sit amet.</div>
+								<p class="text-gray-800 font-serif text-base px-6 mb-5">
+									Lorem ipsum eu nunc commodo posuere et sit amet ligula. 
+								</p>
+							</a>
+						</div>
+						<div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
+							<div class="flex items-center justify-between">
+								<img class="w-8 h-8 rounded-full mr-4 avatar" data-tippy-content="Author Name" src="http://i.pravatar.cc/300" alt="Avatar of Author">
+								<p class="text-gray-600 text-xs md:text-sm">1 MIN READ</p>
+							</div>
+						</div>
+					</div>
+
+
+					<!--1/2 col -->
+					<div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink">
+						<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+							<a href="#" class="flex flex-wrap no-underline hover:no-underline">
+								<img src="https://source.unsplash.com/collection/3657445/800x600" class="h-full w-full rounded-t pb-6">
+								<p class="w-full text-gray-600 text-xs md:text-sm px-6">GETTING STARTED</p>
+								<div class="w-full font-bold text-xl text-gray-900 px-6">Lorem ipsum dolor sit amet.</div>
+								<p class="text-gray-800 font-serif text-base px-6 mb-5">
+									Lorem ipsum eu nunc commodo posuere et sit amet ligula. 
+								</p>
+							</a>
+						</div>
+						<div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
+							<div class="flex items-center justify-between">
+								<img class="w-8 h-8 rounded-full mr-4 avatar" data-tippy-content="Author Name" src="http://i.pravatar.cc/300" alt="Avatar of Author">
+								<p class="text-gray-600 text-xs md:text-sm">1 MIN READ</p>
+							</div>
+						</div>
+					</div>
+
+					<!--1/2 col -->
+					<div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink">
+						<div class="flex-1 flex-row bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+							<a href="#" class="flex flex-wrap no-underline hover:no-underline">	
+								<img src="https://source.unsplash.com/collection/764827/800x600" class="h-full w-full rounded-t pb-6">
+								<p class="w-full text-gray-600 text-xs md:text-sm px-6">GETTING STARTED</p>
+								<div class="w-full font-bold text-xl text-gray-900 px-6">Lorem ipsum dolor sit amet.</div>
+								<p class="text-gray-800 font-serif text-base px-6 mb-5">
+									Lorem ipsum eu nunc commodo posuere et sit amet ligula. 
+								</p>
+							</a>
+						</div>
+						<div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
+							<div class="flex items-center justify-between">
+								<img class="w-8 h-8 rounded-full mr-4 avatar" data-tippy-content="Author Name" src="http://i.pravatar.cc/300" alt="Avatar of Author">
+								<p class="text-gray-600 text-xs md:text-sm">1 MIN READ</p>
+							</div>
+						</div>
+					</div>
+
+
+
+					<!--2/3 col -->
+					<div class="w-full md:w-2/3 p-6 flex flex-col flex-grow flex-shrink">
+						<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+							<a href="#" class="flex flex-wrap no-underline hover:no-underline">	
+								<img src="https://source.unsplash.com/collection/325867/800x600" class="h-full w-full rounded-t pb-6">
+								<p class="w-full text-gray-600 text-xs md:text-sm px-6">GETTING STARTED</p>
+								<div class="w-full font-bold text-xl text-gray-900 px-6">Lorem ipsum dolor sit amet.</div>
+								<p class="text-gray-800 font-serif text-base px-6 mb-5">
+									Lorem ipsum eu nunc commodo posuere et sit amet ligula. 
+								</p>
+							</a>
+						</div>
+						<div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
+							<div class="flex items-center justify-between">
+								<img class="w-8 h-8 rounded-full mr-4 avatar" data-tippy-content="Author Name" src="http://i.pravatar.cc/300" alt="Avatar of Author">
+								<p class="text-gray-600 text-xs md:text-sm">1 MIN READ</p>
+							</div>
+						</div>
+					</div>
+
+					<!--1/3 col -->
+					<div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+						<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+							<a href="#" class="flex flex-wrap no-underline hover:no-underline">
+								<img src="https://source.unsplash.com/collection/1118905/800x600" class="h-full w-full rounded-t pb-6">
+								<p class="w-full text-gray-600 text-xs md:text-sm px-6">GETTING STARTED</p>
+								<div class="w-full font-bold text-xl text-gray-900 px-6">Lorem ipsum dolor sit amet.</div>
+								<p class="text-gray-800 font-serif text-base px-6 mb-5">
+									Lorem ipsum eu nunc commodo posuere et sit amet ligula. 
+								</p>
+							</a>
+						</div>
+						<div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
+							<div class="flex items-center justify-between">
+								<img class="w-8 h-8 rounded-full mr-4 avatar" data-tippy-content="Author Name" src="http://i.pravatar.cc/300" alt="Avatar of Author">
+								<p class="text-gray-600 text-xs md:text-sm">1 MIN READ</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!--/ Post Content-->
+						
+			</div>
+			
+			
+				<!--Subscribe-->	
+				<div class="container font-sans bg-green-100 rounded mt-8 p-4 md:p-24 text-center">
+					<h2 class="font-bold break-normal text-2xl md:text-4xl">Subscribe to Ghostwind CSS</h2>
+					<h3 class="font-bold break-normal font-normal text-gray-600 text-base md:text-xl">Get the latest posts delivered right to your inbox</h3>
+					<div class="w-full text-center pt-4">
+						<form action="#">
+							<div class="max-w-xl mx-auto p-1 pr-0 flex flex-wrap items-center">
+								<input type="email" placeholder="youremail@example.com" class="flex-1 appearance-none rounded shadow p-3 text-gray-600 mr-2 focus:outline-none">
+								<button type="submit" class="flex-1 mt-4 md:mt-0 block md:inline-block appearance-none bg-green-500 text-white text-base font-semibold tracking-wider uppercase py-4 rounded shadow hover:bg-green-400">Subscribe</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!-- /Subscribe-->
+			
+	
+				<!--Author-->
+				<div class="flex w-full items-center font-sans p-8 md:p-24">
+					<img class="w-10 h-10 rounded-full mr-4" src="http://i.pravatar.cc/300" alt="Avatar of Author">
+					<div class="flex-1">
+						<p class="text-base font-bold text-base md:text-xl leading-none">Ghostwind CSS</p>
+						<p class="text-gray-600 text-xs md:text-base">Tailwind CSS version of Ghost's Casper theme by <a class="text-gray-800 hover:text-green-500 no-underline border-b-2 border-green-500" href="https://www.tailwindtoolbox.com">TailwindToolbox.com</a></p>
+					</div>
+					<div class="justify-end">
+					<a href="post.html" class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full">Read More</a>
+					</div>
+				</div>
+				<!--/Author-->
+			
+		</div>
+	
+
+	</div>
+
+
+	<footer class="bg-gray-900">	
+		<div class="container max-w-6xl mx-auto flex items-center px-2 py-8">
+
+			<div class="w-full mx-auto flex flex-wrap items-center">
+				<div class="flex w-full md:w-1/2 justify-center md:justify-start text-white font-extrabold">
+					<a class="text-gray-900 no-underline hover:text-gray-900 hover:no-underline" href="#">
+						👻 <span class="text-base text-gray-200">Ghostwind CSS</span>
+					</a>
+				</div>
+				<div class="flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end">
+					<ul class="list-reset flex justify-center flex-1 md:flex-none items-center">
+					  <li>
+						<a class="inline-block py-2 px-3 text-white no-underline" href="#">Active</a>
+					  </li>
+					  <li>
+						<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-3" href="#">link</a>
+					  </li>
+					  <li>
+						<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-3" href="#">link</a>
+					  </li>
+						<li>
+						<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-3" href="#">link</a>
+					  </li>
+					</ul>
+				</div>
+			</div>
+        
+
+		
+		</div>
+	</footer>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+	<script>
+		//Init tooltips
+		tippy('.avatar')
+	</script>
+</body>
+</html>
