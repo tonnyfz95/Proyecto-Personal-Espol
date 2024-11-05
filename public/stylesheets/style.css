@@ -65,3 +65,17 @@ input[type="radio"]:checked + .indicators label {
 #img5:checked ~ .carousel-images {
     transform: translateX(-400%);
 }
+
+.icon-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #bfc219;
+    padding: 0.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto hover para agrandar y cambiar color */
+.icon-link:hover {
+    transform: scale(1.2); /* Agranda el icono un 20% */
+    color: #ffffff; /* Cambia el color del icono al pasar el ratón */
+}
